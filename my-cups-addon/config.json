@@ -1,0 +1,13 @@
+{
+  "name": "CUPS Custom",
+  "version": "1.0",
+  "slug": "cups_custom",
+  "description": "CUPS print server with USB passthrough",
+  "arch": ["armv7", "arm64"],
+  "startup": "before",
+  "boot": "auto",
+  "host_network": true,
+  "devices": ["/dev/usb/lp0:/dev/usb/lp0"],
+  "options": {},
+  "schema": {}
+}
